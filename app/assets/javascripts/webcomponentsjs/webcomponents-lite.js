@@ -191,5 +191,3 @@ b,c){K.f();K.prepareTemplate(a,b,c)},styleSubtree:function(a,b){K.f();K.styleSub
 d=function(){if(c){var a=c;c=null;a();return!0}},e=b.whenReady;a.polyfillWrapFlushCallback(function(a){c=a;e(d)});b.whenReady=function(a){e(function(){d()?b.whenReady(a):a()})}}b.whenReady(function(){requestAnimationFrame(function(){window.WebComponents.ready=!0;document.dispatchEvent(new CustomEvent("WebComponentsReady",{bubbles:!0}))})})})();(function(){var a=document.createElement("style");a.textContent="body {transition: opacity ease-in 0.2s; } \nbody[unresolved] {opacity: 0; display: block; overflow: hidden; position: relative; } \n";
 var b=document.querySelector("head");b.insertBefore(a,b.firstChild)})()})();
 }).call(self)
-
-//# sourceMappingURL=webcomponents-lite.js.map
